@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <script src="js.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Library</h1>
+    <h2>Books</h2>
+    <div id="bookDisplay">
+    </div>
+    <h2>Add a book</h2>
+    <form action="" onsubmit="event.preventDefault(); addNewBook();" id="addBookForm">
+        <label for="title">Title</label>
+        <input type="text" name="title" id="newBookTitle" placeholder="Title..." required>
+        <label for="author">Author</label>
+        <input type="text" name="author" id="newBookAuthor" placeholder="Author..." required>
+        <label for="length">Length</label>
+        <input type="number" name="length" id="newBookLength" placeholder="This many pages..." required>
+        <label for="readYet">Read Yet?</label>
+        <input type="checkbox" id="newBookReadYet">
+        <button type="submit" id="submitNewBookBtn">Add</button>
+    </form>
+</body>
+</html>
